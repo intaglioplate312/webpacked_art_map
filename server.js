@@ -19,8 +19,8 @@ app.use(methodOverride("_method"));
 
 app.use(express.static(process.cwd() + '/public'));
 
-app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars');
+// app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+// app.set('view engine', 'handlebars');
 
 app.use(fileUpload());
 
