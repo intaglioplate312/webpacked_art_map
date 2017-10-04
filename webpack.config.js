@@ -9,12 +9,12 @@ const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
   filename: 'index.html',
   inject: 'body'
 })
-
+// changed but not sure it's right
 module.exports = {
   entry: './client/index.js',
   output: {
     path: path.resolve('dist'),
-    filename: 'index_bundle.js'
+    filename: '../dist/index_bundle.js'
   },
   module: {
     loaders: [
