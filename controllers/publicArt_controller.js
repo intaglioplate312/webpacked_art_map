@@ -88,6 +88,7 @@ router.post("/upload", function(req, res){
             artist: req.body.artist,
             title: req.body.title,
             description: req.body.description,
+            type: req.body.description,
             address: req.body.address,
             lat: geoLat,
             long: geoLong,
