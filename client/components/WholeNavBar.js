@@ -16,13 +16,13 @@ export default class WholeNavBar extends React.Component {
                  <Nav>
                    <NavItem eventKey={1} href="#">About</NavItem>
                    <NavItem eventKey={2} href="#">Link</NavItem>
-                   <NavDropdown eventKey={3} title="Refine Map" id="basic-nav-dropdown">
-                     <MenuItem eventKey={3.1}>Sculpture</MenuItem>
-                     <MenuItem eventKey={3.2}>Murals</MenuItem>
-                     <MenuItem eventKey={3.3}>Graffiti</MenuItem>
-                     <MenuItem eventKey={3.4}>Topiary</MenuItem>
-                     <MenuItem eventKey={3.5}>Mixed Media</MenuItem>
-                     <MenuItem eventKey={3.6}>constructs</MenuItem>
+                   <NavDropdown eventKey={3} title="Search for a type of artwork" id="basic-nav-dropdown">
+                     <MenuItem eventKey={3.1}>Mural</MenuItem>
+                     <MenuItem eventKey={3.2}>Sculpture</MenuItem>
+                     <MenuItem eventKey={3.3}>Statue</MenuItem>
+                     <MenuItem eventKey={3.4}>Graffiti</MenuItem>
+                     <MenuItem eventKey={3.5}>Performance</MenuItem>
+                     <MenuItem eventKey={3.6}>Other</MenuItem>
                    </NavDropdown>
                  </Nav>
                  <Nav pullRight>
