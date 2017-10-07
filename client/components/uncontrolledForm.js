@@ -34,9 +34,6 @@ class NameForm extends React.Component {
             <input type="text" placeholder="Description" ref={(input) => this.input = input} />
           </label>
           <label>
-            <input type="text" placeholder="Description" ref={(input) => this.input = input} />
-          </label>
-          <label>
             Type of Artwork:
           <select>
             <option value="mural">Mural</option>
