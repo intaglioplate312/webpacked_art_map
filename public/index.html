@@ -49,37 +49,7 @@
     </div>
 
  
-    <nav class="navbar navbar-default navStyle" id="customNav">
-        <div class="container-fluid row3">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-            <a class="navbar-brand navStyle" id="navHead" href="#">CHICAGO PUBLIC ART DATABASE</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navStyle" id="bs-example-navbar-collapse-1">
-             
-             <ul class="nav navbar-nav" id="list"> 
-                {{!-- <li class="linkColor col-lg-9" id="tagline">a crowd sourced public art database</li> --}}
-                {{!-- <li class="active"><button type="button" class="btn btn-default">Add Artwork</button></li> --}}
-                <li class="col-lg-4 col-md-6 col-sm-6"><a class="linkSet" id="linkColor" href="https://pure-atoll-15112.herokuapp.com/about">ABOUT<span class="sr-only">(current)</span></a></li>
-                <li class="col-lg-6 col-md-6 col-sm-6"><a class="linkSet" id="linkColor" href="https://pure-atoll-15112.herokuapp.com/api">API <span class="sr-only">(current)</span></a></li>
-            </ul>       
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
-            <form class= "form-inline" 
-                    ref='uploadForm' 
-                    id='uploadForm' 
-                    action='./upload' 
-                    method='post' 
-                    encType="multipart/form-data">
-                        <input class="form-control formBorder" type="file" name="image" required />
-                        <input class="form-control" type="text" name="artist" id="artistBox" placeholder="artist (if known)"/>
-                        <input class="form-control" type="text" name="title" id="titleBox" placeholder="title (if known)" required/>
-                        <input class="form-control" type="text" name="description" id="descriptionBox" placeholder="Description" required/>
-                        <input class="form-control" type="text" name="address" id="addressBox" placeholder="address" required />
-                        <input class="form-control" id="submitBox" type='submit' value='Upload!' />
-            </form>
+    
         <div id= "map"></div>
 
     <script>
