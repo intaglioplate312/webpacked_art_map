@@ -42,6 +42,7 @@ CREATE TABLE `art` (
   `artist` varchar(250) DEFAULT 'unkown',
   `media` varchar(250) DEFAULT NULL,
   `description` mediumtext,
+  `type` varchar(250) NOT NULL,
   `viewable` tinyint(1) NOT NULL DEFAULT '0',
   `img_file_path` varchar(250) DEFAULT NULL,
   `geolat` float(10,6) DEFAULT NULL,
