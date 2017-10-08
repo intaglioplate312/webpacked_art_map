@@ -10,7 +10,6 @@ export default class App extends React.Component {
       <div className="App"> 
          <WholeNavBar/>
          <NameForm/>
-         <h1> Start of Map </h1>
         </div>
     ); 
   }
