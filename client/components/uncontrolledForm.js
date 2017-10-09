@@ -13,7 +13,10 @@ class NameForm extends React.Component {
   
     render() {
       return (
-        <form onSubmit={this.handleSubmit}>
+        <form onSubmit={this.handleSubmit} 
+        id='uploadForm' 
+        action='./upload' 
+        method='post'>
           <label>
             Upload Image:
           <input
@@ -25,13 +28,13 @@ class NameForm extends React.Component {
             />
             </label>
           <label>
-            <input type="text" placeholder= "Artist" ref={(input) => this.input = input} />
+            <input type="text" placeholder= "Artist" id= "artistBox" ref={(input) => this.input = input} />
           </label>
           <label>
-            <input type="text" placeholder="Title" ref={(input) => this.input = input} />
+            <input type="text" placeholder="Title" id= "titleBox" ref={(input) => this.input = input} />
           </label>
           <label>
-            <input type="text" placeholder="Description" ref={(input) => this.input = input} />
+            <input type="text" placeholder="Description" id= "descriptionBox" ref={(input) => this.input = input} />
           </label>
           <label>
             Type of Artwork:
@@ -44,8 +47,11 @@ class NameForm extends React.Component {
             <option value="other">Other</option>
           </select>
           </label>
+          <label>
+            <input type="text" placeholder="Address" id= "addressBox" ref={(input) => this.input = input} />
+          </label>
         
-            <input type="submit" value="Submit" />
+            <input type="submit" value="Submit" id= "submitBox" />
         </form>
       );
     }
