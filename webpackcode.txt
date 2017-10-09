@@ -1,2 +1,2 @@
 
-'./node_modules/webpack/bin/webpack.js' -d
+'./node_modules/webpack/bin/webpack.js' -p
