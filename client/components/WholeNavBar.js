@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap';
+import LoginButton from './LoginButton'
 
 export default class WholeNavBar extends React.Component {
     render () { 
@@ -26,7 +27,7 @@ export default class WholeNavBar extends React.Component {
                    </NavDropdown>
                  </Nav>
                  <Nav pullRight>
-                   <NavItem eventKey={1} href="#">Login to Add Images to Map</NavItem>
+                   <LoginButton/>
                  </Nav>
                </Navbar.Collapse>
              </Navbar>
