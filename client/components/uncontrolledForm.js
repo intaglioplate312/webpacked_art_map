@@ -11,6 +11,17 @@ class RegisterModal extends Component
                     <input type="text" name="artist" placeholder="Artist" id= "artistBox"/>
                     <input type="text" name="title" placeholder="Title" id="titleBox"/><br/>
                     <input type="text" name="description" placeholder="Description" id="descriptionBox"/>
+                    <label>
+            //         Type of Artwork:
+            //           <select>
+            //             <option name="mural">Mural</option>
+            //             <option name="sculpture">Sculpture</option>
+            //             <option name="statue">Statue</option>
+            //             <option name="graffiti">Graffiti</option>
+            //             <option name="performance">Performance</option>
+            //             <option name="other">Other</option>
+            //           </select>
+//                  </label>
                     <input type="text" name="address" placeholder="Address" id="addressBox"/>
                     <input type="submit" value="Submit" id= "submitBox"/>
                 </form>
