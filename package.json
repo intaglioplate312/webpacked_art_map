@@ -18,6 +18,7 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "detect-file": "^1.0.0",
+    "dotenv": "^4.0.0",
     "express": "^4.15.4",
     "express-fileupload": "^0.1.4",
     "express-handlebars": "^3.0.0",

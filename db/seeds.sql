@@ -2,8 +2,8 @@
 
 INSERT INTO `api` (`id`, `key`, `owner`, `url`)
 VALUES
-	(1,'b19cf4c559204e82bb7d2ff12172bacf','Helen','https://spotify.com'),
-	(2,'AIzaSyCf-3z1vv2pgDOcWmZnH6yKB0ZV06eLfCQ','Helen','https://www.google.com/maps');
+	(1,' ','Helen','https://spotify.com'),
+	(2,' ','Helen','https://www.google.com/maps');
 
 
 INSERT INTO `art` (`id`, `title`, `artist`, `media`, `description`,`type`, `viewable`, `img_file_path`, `geolat`, `geolng`, `street_number`, `route`, `city`, `state`, `zip`, `user_id`, `date`)
