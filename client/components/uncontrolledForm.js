@@ -14,12 +14,12 @@ class RegisterModal extends Component
                     <label>
             //         Type of Artwork:
             //           <select>
-            //             <option name="mural">Mural</option>
-            //             <option name="sculpture">Sculpture</option>
-            //             <option name="statue">Statue</option>
-            //             <option name="graffiti">Graffiti</option>
-            //             <option name="performance">Performance</option>
-            //             <option name="other">Other</option>
+            //             <option value="mural" name="mural">Mural</option>
+            //             <option value="sculpture" name="sculpture">Sculpture</option>
+            //             <option value="statue" name="statue">Statue</option>
+            //             <option value="graffiti" name="graffiti">Graffiti</option>
+            //             <option value="performance" name="performance">Performance</option>
+            //             <option value="other" name="other">Other</option>
             //           </select>
 //                  </label>
                     <input type="text" name="address" placeholder="Address" id="addressBox"/>
