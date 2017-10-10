@@ -27,7 +27,7 @@ export default class WholeNavBar extends React.Component {
                    </NavDropdown>
                  </Nav>
                  <Nav pullRight>
-                   <LoginButton/>
+                    <MenuItem eventKey={3.6}>Log In to Add artwork</MenuItem>
                  </Nav>
                </Navbar.Collapse>
              </Navbar>
