@@ -15,8 +15,8 @@ export default class WholeNavBar extends React.Component {
                </Navbar.Header>
                <Navbar.Collapse>
                  <Nav>
-                   <NavItem eventKey={1} href="#">About</NavItem>
-                   <NavItem eventKey={2} href="#">Link</NavItem>
+                   <li> <a href="http://justofflakeshoredrive.com">Link Test</a></li>
+                   <li> <a href="http://justofflakeshoredrive.com">Link Test</a></li>
                    <NavDropdown eventKey={3} title="Search for a type of artwork" id="basic-nav-dropdown">
                      <MenuItem eventKey={3.1}>Mural</MenuItem>
                      <MenuItem eventKey={3.2}>Sculpture</MenuItem>
@@ -31,9 +31,7 @@ export default class WholeNavBar extends React.Component {
                  </Nav>
                </Navbar.Collapse>
              </Navbar>
-</div>
-    
-        
-    )
- } 
- }
+            </div>
+          )
+      } 
+}
