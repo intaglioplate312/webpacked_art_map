@@ -7,33 +7,14 @@
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	background-image: url("https://media.giphy.com/media/26gsuWo5reMMh2Bmo/source.gif");
 }
 .container-fluid{
 	background-color: black;
 }
-.navStyle{
-	background-color:black;
-	margin-bottom: 0px;
-}
-#navHead{
-	color: white;
-	font-family: 'Roboto', sans-serif;
-	font-size: 45px;
-	margin-top: 10px;
-	animation-name: example;
-	animation-duration: 4s;
-	animation-iteration-count: infinite;
-}
-nav{
-	background-color: black;
-	margin-bottom: 100px;
-}
-#customNav{
-	margin-bottom: 0px;
-}
-#list{
-	background-color: black;
-}
+
+
+
 .linkSet{
 	font-size: 20px;
 }
@@ -43,15 +24,13 @@ nav{
 	margin-left: 110px; 
 }
 form{
-	padding-left: 10px;
-	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-bottom: 30px;
 	padding-top: 20px;
 	background-repeat: no-repeat;
 	background-size: 100%; 
 	background-position-y: -60px;
-	background-image: url("https://media.giphy.com/media/26gsuWo5reMMh2Bmo/source.gif");
 	border-bottom: 10px solid black;
-	border-top: 5px solid black;
 }
 .formBorder{
 	margin-left: 20px;
