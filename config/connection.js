@@ -1,24 +1,23 @@
 var mysql = require('mysql');
 
-var connection;
-// Connect to JAWS_DB if on Heroku, or a local MySQL instance if not
-if (process.env.JAWSDB_URL) {
-    connection = mysql.createConnection(process.env.JAWSDB_URL);
-} else {
+require('dotenv').config();
 
-    connection = mysql.createConnection({
-        host: 'localhost',
-        port: '3306',
-        user: 'root',
-        password: '',
-        database: 'chicago_public',
-        multipleStatements: true
-    });
-};
-connection.connect(function(err) {
-    if (err) {
-        throw err;
-    }
+var pool  = mysql.createPool({
+  connectionLimit : 10,
+  host            : process.env.DB_HOST,
+  user            : process.env.DB_USER,
+  password        : process.env.DB_PASS,
+  database        : process.env.DB_DB
 });
 
-module.exports = connection;
+pool.getConnection(function(err, connection) {
+  connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+    if (error) throw error;
+    console.log('The solution is: ', results[0].solution);
+  });
+
+  connection.release();
+
+});
+
+module.exports = pool;
