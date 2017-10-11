@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class RegisterModal extends Component
+class AddArtworkForm extends Component
 {
     render() {
         return(
@@ -13,24 +13,24 @@ class RegisterModal extends Component
                     <input type="text" name="description" placeholder="Description" id="descriptionBox"/>
                     <label>
             //         Type of Artwork:
-            //           <select>
-            //             <option value="mural" name="mural">Mural</option>
-            //             <option value="sculpture" name="sculpture">Sculpture</option>
-            //             <option value="statue" name="statue">Statue</option>
-            //             <option value="graffiti" name="graffiti">Graffiti</option>
-            //             <option value="performance" name="performance">Performance</option>
-            //             <option value="other" name="other">Other</option>
+            //           <select name="type" value="type">
+            //             <option name="type" value="mural">Mural</option>
+            //             <option name="type" value="sculpture">Sculpture</option>
+            //             <option name="type" value="statue">Statue</option>
+            //             <option name="type" value="graffiti">Graffiti</option>
+            //             <option name="type" value="performance">Performance</option>
+            //             <option name="type" value="other">Other</option>
             //           </select>
 //                  </label>
                     <input type="text" name="address" placeholder="Address" id="addressBox"/>
-                    <input type="submit" value="Submit" id= "submitBox"/>
+                    <input type="submit" name="Submit" id= "submitBox"/>
                 </form>
              </div>
         );
     }
 }
 
-export default RegisterModal;
+export default AddArtworkForm;
 // import React, { Component } from 'react'
 
 // class NameForm extends React.Component {
@@ -40,7 +40,7 @@ export default RegisterModal;
 //     }
   
 //     handleSubmit(event) {
-//       alert('Your information was submitted: ' + this.input.value);
+//       alert('Your information was submitted: ' + this.input.name);
 //       event.preventDefault();
 //     }
   
@@ -53,7 +53,7 @@ export default RegisterModal;
 //           <label>
 //             Upload Image:
 //           <input
-//             /* value={this.state.uploadImage} */
+//             /* name={this.state.uploadImage} */
 //             ref={(input) => this.input = input}
 //             name= "image"
 //             type="file"
@@ -72,19 +72,19 @@ export default RegisterModal;
 //           <label>
 //             Type of Artwork:
 //           <select>
-//             <option value="mural">Mural</option>
-//             <option value="sculpture">Sculpture</option>
-//             <option value="statue">Statue</option>
-//             <option value="graffiti">Graffiti</option>
-//             <option value="performance">Performance</option>
-//             <option value="other">Other</option>
+//             <option name="mural">Mural</option>
+//             <option name="sculpture">Sculpture</option>
+//             <option name="statue">Statue</option>
+//             <option name="graffiti">Graffiti</option>
+//             <option name="performance">Performance</option>
+//             <option name="other">Other</option>
 //           </select>
 //           </label>
 //           <label>
 //             <input type="text" placeholder="Address" id= "addressBox" ref={(input) => this.input = input} />
 //           </label>
         
-//             <input type="submit" value="Submit" id= "submitBox" />
+//             <input type="submit" name="Submit" id= "submitBox" />
 //         </form>
 //       );
 //     }

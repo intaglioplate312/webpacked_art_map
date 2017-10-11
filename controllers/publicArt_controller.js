@@ -35,6 +35,14 @@ router.get("/about", function(req,res){
 router.get("/api", function(req,res){
         res.render("api");
 });
+router.get("/search/:type", function(req, res){
+    artAction.all(function(data){
+        var artTableList = {
+            art:data
+        };
+        res.send(artTableList);
+    });
+})
     
 // add new artwork form route
 router.post("/upload", function(req, res){
