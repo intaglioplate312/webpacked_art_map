@@ -14,7 +14,7 @@ var orm = {
     });
   },
   // searchType: function(artPiece){
-  //   var query = 'SELECT * FROM art WHERE type=';
+  //   var query = 'SELECT * FROM art WHERE type= $type';
   //   connection.query(query, {type: artPiece.type}, function(err, res){
   //       if (err){throw err;}
   //       }

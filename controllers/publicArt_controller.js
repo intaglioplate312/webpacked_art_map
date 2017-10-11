@@ -35,7 +35,7 @@ router.get("/about", function(req,res){
 router.get("/api", function(req,res){
         res.render("api");
 });
-router.get("/search/:type", function(req, res){
+router.post("/search/:type", function(req, res){
     artAction.all(function(data){
         var artTableList = {
             art:data
