@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import WholeNavBar from './WholeNavBar';
-import RegisterModal from './uncontrolledForm'
-import Login from './Login'
+import AddArtworkForm from './uncontrolledForm'
+import SearchForm from './SearchForm'
 
 
 export default class App extends React.Component {
@@ -10,7 +10,8 @@ export default class App extends React.Component {
        return (
       <div className="App"> 
          <WholeNavBar/>
-         <RegisterModal/>
+         <AddArtworkForm/>
+         <SearchForm/>
         </div>
     ); 
   }

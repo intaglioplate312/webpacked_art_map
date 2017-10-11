@@ -10,6 +10,11 @@ var artAction = {
             cb(res);
             }
         );
+    },
+    search: function(artPiece){
+        orm.selectAll("art", function(res){
+            artPiece(res);
+        })
     }
 };
 

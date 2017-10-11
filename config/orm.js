@@ -12,7 +12,13 @@ var orm = {
       }
       cb(result);
     });
-  }
+  },
+  // searchType: function(artPiece){
+  //   var query = 'SELECT * FROM art WHERE type=';
+  //   connection.query(query, {type: artPiece.type}, function(err, res){
+  //       if (err){throw err;}
+  //       }
+  //   }
 };
 
 module.exports = orm;
