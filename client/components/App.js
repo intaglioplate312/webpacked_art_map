@@ -11,8 +11,6 @@ export default class App extends React.Component {
       <div className="App"> 
          <WholeNavBar/>
          <RegisterModal/>
-         <Login/>
-         <h1> Start of Map </h1>
         </div>
     ); 
   }
