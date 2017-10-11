@@ -92,10 +92,19 @@ h4{
 	height: 60px;
 }
 /* The Modal (background) */
+#myBtn {
+	position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    right: 350px;
+	top: 16px;
+	background-color: black;
+	color: lightgrey;
+
+}
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 2; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
