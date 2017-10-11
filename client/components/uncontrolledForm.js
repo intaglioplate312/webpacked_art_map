@@ -12,16 +12,20 @@ class AddArtworkForm extends Component
                     <input type="text" name="title" placeholder="Title" id="titleBox"/><br/>
                     <input type="text" name="description" placeholder="Description" id="descriptionBox"/>
                     <label>
+                        Type of Artwork:
+                    <input type="text" name="type" placeholder="Mural, Sculpture, Statue, Graffiti, Performance, Other"/>
+                    </label>
+                    {/* <label>
             //         Type of Artwork:
             //           <select name="type" value="type">
             //             <option name="type" defaultValue="mural">Mural</option>
-            //             <option name="type" defaultValue="sculpture">Sculpture</option>
+            //             <option name="type" value="sculpture">Sculpture</option>
             //             <option name="type" value="statue">Statue</option>
             //             <option name="type" value="graffiti">Graffiti</option>
             //             <option name="type" value="performance">Performance</option>
             //             <option name="type" value="other">Other</option>
             //           </select>
-//                  </label>
+//                  </label> */}
                     <input type="text" name="address" placeholder="Address" id="addressBox"/>
                     <input type="submit" name="Submit" id= "submitBox"/>
                 </form>
