@@ -4,7 +4,7 @@ class SearchForm extends Component{
     render(){
         return(
             <div>
-                <form name="type_search" action="/search" method="get">  
+                <form name="type_search" action="/search" method="post">  
                     <label>
                         Search for a type of artwork:
                     <select name="type" value="type">

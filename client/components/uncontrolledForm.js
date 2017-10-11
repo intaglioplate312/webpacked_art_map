@@ -14,8 +14,8 @@ class AddArtworkForm extends Component
                     <label>
             //         Type of Artwork:
             //           <select name="type" value="type">
-            //             <option name="type" value="mural">Mural</option>
-            //             <option name="type" value="sculpture">Sculpture</option>
+            //             <option name="type" defaultValue="mural">Mural</option>
+            //             <option name="type" defaultValue="sculpture">Sculpture</option>
             //             <option name="type" value="statue">Statue</option>
             //             <option name="type" value="graffiti">Graffiti</option>
             //             <option name="type" value="performance">Performance</option>
