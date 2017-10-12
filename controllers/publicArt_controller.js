@@ -68,14 +68,17 @@ router.get("/about", function(req,res){
         res.render("about");
 });
 
-router.get("/search/:type", function(req, res){
-    artAction.all(function(data){
-        var artTableList = {
-            art:data
-        };
-        res.send(artTableList);
-    });
-})
+
+// router.get("/search/:type", function(req, res){
+// router.post("/search/:type", function(req, res){
+// >>>>>>> master
+//     artAction.all(function(data){
+//         var artTableList = {
+//             art:data
+//         };
+//         res.send(artTableList);
+//     });
+// })
     
 // add new artwork form route
 router.post("/upload", function(req, res){
