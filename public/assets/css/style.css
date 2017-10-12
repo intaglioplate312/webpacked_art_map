@@ -91,16 +91,17 @@ h4{
 	width: 100%;
 	height: 60px;
 }
-/* The Modal (background) */
+/* The Modal (background)
 #myBtn {
-	position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+	position: fixed; 
+    z-index: 1; 
     right: 350px;
 	top: 16px;
 	background-color: black;
 	color: lightgrey;
 
-}
+} 
+*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
