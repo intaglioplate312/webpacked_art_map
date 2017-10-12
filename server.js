@@ -6,9 +6,17 @@ var exphbs = require('express-handlebars');
 var router = require('./controllers/publicArt_controller.js');
 var fileUpload = require('express-fileupload');
 var app = express();
+var session = require('express-session');
+var passport = require('passport');
 
+app.use(express.static(process.cwd() + '/public'));
 
-app.set('port', (process.env.PORT || 8080));
+app.set('port', 5000);
+
+app.use(session({secret: 'some secret value, changeme'}));  
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,7 +25,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(methodOverride("_method"));
 
-app.use(express.static(process.cwd() + '/public'));
+
 
 // app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 // app.set('view engine', 'handlebars');
@@ -27,5 +35,5 @@ app.use(fileUpload());
 app.use('/', router);
 
 app.listen(app.get('port'), function(){
-    console.log('running on 8080')
+    console.log('running on 5000')
 });
