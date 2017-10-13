@@ -13,8 +13,6 @@ class About extends Component
                         <p>The Chicago public art map and database is an interactive tool that highlights the art we see everyday
                             in the street, from the ephemeral to the concrete.  We encourage users to define what art means to them, take a picture,
                             write a description, record the location, and enter it into our database.</p>
-                      
-                        <div className="img" src="/assets/img/scarface.gif" height="270" width="400"></div>
                   
                         <h1>Developers</h1>
                     
