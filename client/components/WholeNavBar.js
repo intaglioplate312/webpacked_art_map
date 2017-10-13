@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap';
-import LoginButton from './LoginButton'
+
 
 export default class WholeNavBar extends React.Component {
     render () { 
