@@ -5,6 +5,10 @@ class AddArtworkForm extends Component
     render() {
         return(
             <div>
+                 <div >
+                        <h5> To Add Art Work Please Login with Google</h5>
+                    <a href="/auth/google"><img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="10%" height="10%" ></img></a>
+                    </div> 
                 <form method="post" action="/upload" encType="multipart/form-data">
                     Upload Image:<br/>
                     <input type="file" name="image"/>
