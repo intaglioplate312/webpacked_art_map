@@ -1,5 +1,7 @@
 var express = require("express");
 var detect = require('detect-file');
+var passport = require('passport');
+var GoogleStrategy = require('passport-google-oauth20').Strategy;
 var fs = require('fs');
 var artAction = require("../models/publicArt.js");
 var router = express.Router();
@@ -13,6 +15,30 @@ var options = {
   };
 
 var geocoder = NodeGeocoder(options);
+
+var isAuthenticated = function (req, res, next) {
+    if (req.isAuthenticated())
+      return next();
+    res.send('Please login through google on the page before uploading');
+}
+
+// passport.serializeUser(function(user, done) {
+//     done(null, user);
+// });
+  
+// passport.deserializeUser(function(user, done) {
+//     done(null, user);
+// });
+  
+// passport.use(new GoogleStrategy({
+//       clientID:     process.env.GOOGLECLIENTID,
+//       clientSecret: process.env.CLIENTSECRET,
+//       callbackURL: "http://www.solvebycode.com:5000/auth/google/callback",
+//     },
+//     function(accessToken, refreshToken, profile, cb) {
+//       cb(null,profile);
+//     }
+// ));
 
 // route retrieves art details from db
 router.get("/table", function(req,res){
@@ -28,22 +54,42 @@ router.get("/", function(req,res){
         res.render("index");
 });
 
+router.get('/auth/google',
+    passport.authenticate('google', { scope: ['email'] }));
+
+router.get('/auth/google/callback', 
+    passport.authenticate('google', { failureRedirect: '/auth/google' }),
+    function(req, res) {
+        res.redirect(req.session.returnTo || '/');
+        delete req.session.returnTo;
+});
+
 router.get("/about", function(req,res){
         res.render("about");
 });
 
-router.get("/api", function(req,res){
-        res.render("api");
-});
-router.post("/search", function(req, res){
-    var search = req.body.type;
-    artAction.all(function(search){
-        var artTableList = {
-            art:search
-        };
-        res.send(artTableList);
-    });
-})
+// <<<<<<< feature/search
+// router.post("/search", function(req, res){
+//     var search = req.body.type;
+//     artAction.all(function(search){
+//         var artTableList = {
+//             art:search
+//         };
+//         res.send(artTableList);
+//     });
+// })
+// =======
+
+// router.post("/search", function(req, res){
+//     var search = req.body.type;
+//     artAction.all(function(search){
+//         var artTableList = {
+//             art:search
+//         };
+//         res.send(artTableList);
+//     });
+// })
+// >>>>>>> master
     
 // add new artwork form route
 router.post("/upload", function(req, res){

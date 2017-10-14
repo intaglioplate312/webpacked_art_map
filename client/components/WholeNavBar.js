@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap';
-import LoginButton from './LoginButton'
+
 
 export default class WholeNavBar extends React.Component {
     render () { 
@@ -26,6 +26,9 @@ export default class WholeNavBar extends React.Component {
                      <MenuItem eventKey={3.6}>Other</MenuItem>
                    </NavDropdown>
                  </Nav>
+                    <Nav pullRight >
+                      <a href="/auth/google"><img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="25%" height="25%"></img></a>
+                    </Nav>
                </Navbar.Collapse>
              </Navbar>
             </div>

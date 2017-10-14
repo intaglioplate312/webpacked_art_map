@@ -13,7 +13,10 @@
 	background-color: black;
 }
 
-
+h1{
+	font-family:'Work Sans', sans-serif;
+	font-size: 1em;
+}
 
 .linkSet{
 	font-size: 20px;
@@ -69,7 +72,7 @@ footer{
 	margin: 30px;
 	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8);
 	height: 100%;
-	width: 100px;
+	width: 400px;
 	background-color: white;
 	border: 5px solid black;
 	padding: 30px;
@@ -91,16 +94,17 @@ h4{
 	width: 100%;
 	height: 60px;
 }
-/* The Modal (background) */
+/* The Modal (background)
 #myBtn {
-	position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+	position: fixed; 
+    z-index: 1; 
     right: 350px;
 	top: 16px;
 	background-color: black;
 	color: lightgrey;
 
-}
+} 
+*/
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import WholeNavBar from './WholeNavBar';
 import AddArtworkForm from './uncontrolledForm'
 import SearchForm from './SearchForm'
+// import About from './About'
 
 
 export default class App extends React.Component {
@@ -10,6 +11,7 @@ export default class App extends React.Component {
        return (
       <div className="App"> 
          <WholeNavBar/>
+         {/* <About/> */}
          <AddArtworkForm/>
          <SearchForm/>
         </div>
