@@ -13,9 +13,14 @@ var orm = {
       cb(result);
     });
   },
-  selectAll: function(displayTable, cb){
+//   selectAll: function(displayTable, cb){
     var userSearch = displayTable.search
-    var queryString = "SELECT * FROM art WHERE type LIKE " + userSearch;
+feature/About_routing
+    // var queryString = "SELECT * FROM art WHERE type LIKE " + userSearch;
+//     var queryString = "SELECT * FROM art";
+
+    //var queryString = "SELECT * FROM art WHERE type LIKE " + userSearch;
+
     connection.query(queryString, function(err, result){
       if (err){throw err;
       }
@@ -23,6 +28,7 @@ var orm = {
       cb(result);
     });
   }
+
   // searchType: function(artPiece){
   //   var query = 'SELECT * FROM art WHERE ?';
   //   connection.query(query, {type: artPiece.type}, function(err, res){
@@ -30,6 +36,7 @@ var orm = {
   //       }
 
   //     }
+
 };
 
 module.exports = orm;
