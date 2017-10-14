@@ -11,9 +11,9 @@ var artAction = {
             }
         );
     },
-    search: function(artPiece){
-        orm.selectAll("art", function(res){
-            artPiece(res);
+    search: function(cb){
+        orm.selectAll(art, function(res){
+            cb(res);
         })
     }
 };

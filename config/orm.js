@@ -13,12 +13,17 @@ var orm = {
       cb(result);
     });
   },
-  // searchType: function(artPiece){
-  //   var query = 'SELECT * FROM art WHERE type= $type';
-  //   connection.query(query, {type: artPiece.type}, function(err, res){
-  //       if (err){throw err;}
-  //       }
-  //   }
+  selectAll: function(displayTable, cb){
+    var userSearch = displayTable.search
+    // var queryString = "SELECT * FROM art WHERE type LIKE " + userSearch;
+    var queryString = "SELECT * FROM art";
+    connection.query(queryString, function(err, result){
+      if (err){throw err;
+      }
+      console.log(userSearch);
+      cb(result);
+    });
+  }
 };
 
 module.exports = orm;
