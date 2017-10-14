@@ -27,7 +27,7 @@ export default class WholeNavBar extends React.Component {
                    </NavDropdown>
                  </Nav>
                     <Nav pullRight >
-                      <a href="/auth/google"><img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="25%" height="25%"></img></a>
+                      <a href="/auth/google"><img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="40%" height="40%"></img></a>
                     </Nav>
                </Navbar.Collapse>
              </Navbar>
