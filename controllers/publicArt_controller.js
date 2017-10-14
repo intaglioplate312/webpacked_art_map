@@ -35,10 +35,11 @@ router.get("/about", function(req,res){
 router.get("/api", function(req,res){
         res.render("api");
 });
-router.post("/search/:type", function(req, res){
-    artAction.all(function(data){
+router.post("/search", function(req, res){
+    var search = req.body.type;
+    artAction.all(function(search){
         var artTableList = {
-            art:data
+            art:search
         };
         res.send(artTableList);
     });
