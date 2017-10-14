@@ -68,28 +68,20 @@ router.get("/about", function(req,res){
         res.render("about");
 });
 
-// <<<<<<< feature/search
-// router.post("/search", function(req, res){
-//     var search = req.body.type;
-//     artAction.all(function(search){
-//         var artTableList = {
-//             art:search
-//         };
-//         res.send(artTableList);
-//     });
-// })
-// =======
 
-// router.post("/search", function(req, res){
-//     var search = req.body.type;
-//     artAction.all(function(search){
-//         var artTableList = {
-//             art:search
-//         };
-//         res.send(artTableList);
-//     });
-// })
-// >>>>>>> master
+router.post("/search", function(req, res){
+    // console.log(req.body.type);
+    var search = req.body.type;
+    artAction.search(search, function(search){
+        var artTableList = {
+            art:search
+        };
+        // console.log('this is router' + search);
+        // res.send(artTableList);
+        res.redirect("/");
+    });
+})
+
     
 // add new artwork form route
 router.post("/upload", function(req, res){

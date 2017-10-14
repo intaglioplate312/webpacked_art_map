@@ -11,8 +11,11 @@ var artAction = {
             }
         );
     },
-    search: function(cb){
-        orm.selectAll(art, function(res){
+    search: function(search, cb){
+        console.log('our newest ' + search);
+        // console.log('our cb' + cb);
+        orm.searchAll(search, function(res){
+            // console.log('this is publicArt' + res);
             cb(res);
         })
     }
