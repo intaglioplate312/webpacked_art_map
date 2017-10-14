@@ -13,6 +13,7 @@ var orm = {
       cb(result);
     });
   },
+<<<<<< feature/cleaningUpPage
   searchAll: function(search, cb){
     // var userSearch = displayTable.search
     var queryString = "SELECT * FROM art WHERE type LIKE '" + search + "%'";
