@@ -4,6 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import AddArtworkForm from './uncontrolledForm'
 import SearchForm from './SearchForm'
+import About from './About';
 import Nav from './Nav';
 
 
@@ -18,7 +19,7 @@ export default class App extends React.Component {
          <AddArtworkForm/> */}
         <Switch>
         <Route exact path='/' component={Nav}/>
-         {/* both /roster and /roster/:number begin with /roster */}
+        <Route path='/About' component={About}/>
         <Route path='/Add' component={AddArtworkForm}/>
         <Route path='/Search' component={SearchForm}/>
         </Switch>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Bootstrap from 'react-bootstrap';
-import Nav from '/Nav'
+import Nav from './Nav'
 
 class About extends Component
 {
