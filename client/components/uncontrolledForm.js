@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {} from 'react-bootstrap';
+import Nav from './Nav'
 
 class AddArtworkForm extends Component
 {
     render() {
         return(
             <div>
+                <Nav/>
                 <form method="post" action="/upload" encType="multipart/form-data">
                     Upload Image:<br/>
                     <input type="file" name="image"/>

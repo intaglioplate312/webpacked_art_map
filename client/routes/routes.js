@@ -1,18 +1,22 @@
-import React from "react";
-import { BrowserRouter as Router, Route,  } from "react-router-dom";
-import uncontrolledForm from "../components/uncontrolledForm";
-import NoMatch from "../components/NoMatch";
-import Nav from "../components/Nav";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Nav from './Nav';
+import SearchForm from './SearchForm';
+import AddArtworkForm from './uncontrolledForm';
+import { Router, Route, browserHistory } from 'react-router';
+import { BrowserRouter } from 'react-router-dom'
 
-const Routes = () =>
-  <Router>
+const Root = () => {
+  return (
     <div>
-      <Nav />
-        <Route exact path="/" />
-        <Route exact path="/addArt" component={uncontrolledForm} />
-        <Route component={NoMatch} />
+      <Router history={BrowserRouter}>
+        <Route path="/" component={Nav}/>
+        <Route path="/About" component={About}/>
+        <Route path="/Add" component={AddArtworkForm}/>
+        <Route path="/Search" component={SearchForm}/>
+      </Router>
     </div>
-  </Router>;
+  )
+}
 
-export default Routes;
-
+ReactDOM.render(<Root />, document.getElementById('root'));
