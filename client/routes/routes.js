@@ -1,24 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route,  } from "react-router-dom";
+import uncontrolledForm from "../components/uncontrolledForm";
+import NoMatch from "../components/NoMatch";
+import Nav from "../components/Nav";
 
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Blog from "./components/pages/Blog";
-import Contact from "./components/pages/Contact";
-
-const App = () =>
+const Routes = () =>
   <Router>
     <div>
-      <Navpills />
-      <Route exact path="/" component={Nav} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/blog" component={Blog} />
-      <Route path="/contact" component={Contact} />
+      <Nav />
+        <Route exact path="/" />
+        <Route exact path="/addArt" component={uncontrolledForm} />
+        <Route component={NoMatch} />
     </div>
   </Router>;
 
-export default App;
+export default Routes;
 
-const Routes = createRoutes()
-
-export default Routes
