@@ -9,6 +9,12 @@
 	height: 100%;
 	/* background-image: url("https://media.giphy.com/media/26gsuWo5reMMh2Bmo/source.gif"); */
 }
+.navbar-right { 
+	margin-right: 0px !important
+}
+.log {
+  margin: 5px 10px 0 0;
+}
 .container-fluid{
 	background-color: black;
 }

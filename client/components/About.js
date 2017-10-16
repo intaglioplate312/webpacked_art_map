@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import Bootstrap from 'react-bootstrap';
+import Nav from './Nav'
 
 class About extends Component
 {
     render() {
         return(
             <div>
-             
+             <Nav/>
                     <div className="aboutContainer">
                         <h1>About</h1>
                      
