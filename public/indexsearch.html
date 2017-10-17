@@ -60,7 +60,7 @@
         function initMap() {
             // create promise to handle GET call to /table that returns art details from the db
             var promise = new Promise (function(resolve,reject){
-                httpGetAsync('./table', function(data){
+                httpGetAsync('./searchindex', function(data){
                     sqlData = data;
                     if(sqlData !== 'undefined'){
                         resolve(sqlData);

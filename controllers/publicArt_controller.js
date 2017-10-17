@@ -6,6 +6,10 @@ var fs = require('fs');
 var artAction = require("../models/publicArt.js");
 var router = express.Router();
 var NodeGeocoder = require('node-geocoder');
+var expstate = require('express-state');
+
+var app = express();
+expstate.extend(app);
 
 var options = {
     provider: 'google',
@@ -54,6 +58,10 @@ router.get("/", function(req,res){
         res.render("index");
 });
 
+router.get("/searchindex", function(req,res){
+    res.send(app.locals.state.ART.artTableList);
+});
+
 router.get('/auth/google',
     passport.authenticate('google', { scope: ['email'] }));
 
@@ -68,21 +76,19 @@ router.get("/about", function(req,res){
         res.render("about");
 });
 
-
 router.post("/search", function(req, res){
-    // console.log(req.body.type);
     var search = req.body.type;
     artAction.search(search, function(search){
         var artTableList = {
             art:search
         };
-        // console.log('this is router' + search);
-        // res.send(artTableList);
-        res.redirect("/");
+        app.expose({
+            artTableList
+        }, 'ART');
+        res.redirect('indexsearch.html');
     });
 })
 
-    
 // add new artwork form route
 router.post("/upload", function(req, res){
     var geoLat = '';
