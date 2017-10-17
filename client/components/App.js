@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import WholeNavBar from './WholeNavBar';
 import AddArtworkForm from './uncontrolledForm'
 import SearchForm from './SearchForm'
+// import Nav from './Nav'
 // import About from './About'
 
 
