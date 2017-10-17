@@ -7,7 +7,7 @@ export default class WholeNavBar extends React.Component {
         return (
             <div >
                <Navbar className= "navDesign" id="navColor" inverse collapseOnSelect>
-               <img className="img-fluid" alt="Responsive image" height="100px" width="200px" src="./assets/img/Chi_PUB_ART_LOGO.jpg"/>
+               <img className="img-fluid" alt="Responsive image" height="100px" width="200px" src="./assets/img/Chi_PUB_ART_LOGO.png"/>
                <Navbar.Header>
                  <Navbar.Brand>
                    {/* <img height="400px" width="500px" src="./assets/img/Chi_PUB_ART_LOGO.jpg"/> */}
@@ -28,7 +28,7 @@ export default class WholeNavBar extends React.Component {
                    </NavDropdown> */}
                  </Nav>
                     <Nav pullRight >
-                      <a className="addArtwork" href="/auth/google">SIGN IN TO ADD ARTWORK: <img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="40%" height="40%"></img></a>
+                      <a className="addArtwork" href="/auth/google">SIGN IN TO ADD ARTWORK: <img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="191px" height="46px"></img></a>
                     </Nav>
                </Navbar.Collapse>
              </Navbar>

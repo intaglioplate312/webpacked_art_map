@@ -2,21 +2,21 @@ var mysql = require('mysql');
 
 require('dotenv').config();
 
-// var pool  = mysql.createPool({
-//   connectionLimit : 10,
-//   host            : 'localhost',
-//   user            : 'root',
-//   password        : '',
-//   database        : 'chicago_public'
-// });
-
 var pool  = mysql.createPool({
   connectionLimit : 10,
-  host            : process.env.DB_HOST,
-  user            : process.env.DB_USER,
-  password        : process.env.DB_PASS,
-  database        : process.env.DB_DB
- });
+  host            : 'localhost',
+  user            : 'root',
+  password        : '',
+  database        : 'chicago_public'
+});
+
+// var pool  = mysql.createPool({
+//   connectionLimit : 10,
+//   host            : process.env.DB_HOST,
+//   user            : process.env.DB_USER,
+//   password        : process.env.DB_PASS,
+//   database        : process.env.DB_DB
+//  });
 
 pool.getConnection(function(err, connection) {
   connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
