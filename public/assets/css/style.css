@@ -7,7 +7,28 @@
 	margin: 0;
 	padding: 0;
 	height: 100%;
-	background-image: url("https://media.giphy.com/media/26gsuWo5reMMh2Bmo/source.gif");
+	background-color: #d6e8bb;
+}
+.chiLogo{
+	margin:0;
+	padding:0;
+}
+.navDesign{
+	font-family: 'Hind', sans-serif;
+	color: white;
+}
+#navColor{
+	color: white;
+}
+.green{
+	background-color: #C0E672;
+	font-family: 'Hind', sans-serif;
+	
+}
+.addArtwork{
+	color: white;
+	font-size: 20px;
+	font-family: 'Open Sans', sans-serif;
 }
 .container-fluid{
 	background-color: black;

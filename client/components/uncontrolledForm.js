@@ -6,7 +6,7 @@ class AddArtworkForm extends Component
     render() {
         return(
             <div>
-                <form method="post" action="/upload" encType="multipart/form-data">
+                <form class="green" method="post" action="/upload" encType="multipart/form-data">
                     Upload Image:<br/>
                     <input type="file" name="image"/>
                     <input type="text" name="artist" placeholder="Artist" id= "artistBox"/>
