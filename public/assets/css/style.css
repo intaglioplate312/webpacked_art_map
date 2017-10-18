@@ -10,6 +10,7 @@
 	height: 100%;
 	background-color: #C0E672;
 }
+
 .chiLogo{
 	margin:0;
 	padding:0;
@@ -26,21 +27,39 @@
 	font-family: 'Roboto', sans-serif;
 	
 }
-.addArtwork{
-	color: white;
-	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
+a {
+	padding-top: 20;
 }
 .container-fluid{
 	background-color: black;
 }
-
+ul {
+	padding-top: 20px;
+}
+li {
+	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 15px;
+	letter-spacing: .5px;
+}
+li a {
+	text-decoration: none;
+	color: white;
+}
 h1{
 	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
+	font-weight: bold;
+	padding-bottom: 15px;
 }
 h4{
 	font-family: 'Roboto', sans-serif;
+	padding-bottom: 15px;
+}
+h3{
+	font-family: 'Roboto', sans-serif;
+	padding-top: 15px;
+
 }
 nav img {
 	padding-top: 5px;
@@ -174,6 +193,9 @@ footer{
     font-weight: bold;
 }
 
+.aboutContainer a {
+	color:Black;
+}
 .close:hover,
 .close:focus {
     color: black;
