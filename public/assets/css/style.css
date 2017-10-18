@@ -57,8 +57,10 @@ h4{
 	padding-bottom: 15px;
 }
 h5{
+	padding-top: 20px;
+	padding-left: 3px;
 	font-family: 'Roboto', sans-serif;
-	padding-bottom: 15px;
+	font-weight: bold;
 }
 h3{
 	font-family: 'Roboto', sans-serif;
@@ -91,14 +93,12 @@ input[type=file] {
 	display: inline;
     border: 3px solid grey;
 	border-radius: 4px;
-
 	margin-right: 5px;
 }
 input[type=text] {
 	display: inline;
     border: 3px solid grey;
 	border-radius: 4px;
-
 	margin-right: 5px;
 }
 input[type=submit] {
@@ -109,6 +109,23 @@ input[type=submit] {
 	color: black;
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+a.fake {
+	display: inline;
+	padding-left: 2px;
+	padding-right: 2px;
+    background-color:lightsalmon;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	margin-left: 5px;
+	margin-right: 5px;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	border-right: 2px solid gray;
+	border-bottom: 2px solid gray;
+
 }
 .return {
 	background-color:lightsalmon;

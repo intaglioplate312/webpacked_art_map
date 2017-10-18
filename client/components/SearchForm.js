@@ -8,8 +8,8 @@ class SearchForm extends Component{
                 <label>
                 Type of Artwork:
                 <input id= "searchForm" type="text" name="type" placeholder="Mural, Sculpture, Statue, Graffiti, Performance, Other"/>                </label>
-                    <input type="submit" name="Search" id= "submitBox"/>
-                    <button className="return" href="/" >Return to Full Map</button>
+                    <input type="submit" name="Search" id= "submitBox"/>   
+                    <a className="fake" href="/index.html">Return to Full Map</a>
                 </form>
             </div>
         )
