@@ -1,6 +1,7 @@
 /*Global*/
 * {
 	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
 }
 
    html, body, .mapWrapper {
@@ -14,7 +15,7 @@
 	padding:0;
 }
 .navDesign{
-	font-family: 'Hind', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: white;
 }
 #navColor{
@@ -22,21 +23,24 @@
 }
 .green{
 	background-color: #C0E672;
-	font-family: 'Hind', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	
 }
 .addArtwork{
 	color: white;
 	font-size: 20px;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 .container-fluid{
 	background-color: black;
 }
 
 h1{
-	font-family:'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 1em;
+}
+h4{
+	font-family: 'Roboto', sans-serif;
 }
 nav img {
 	padding-top: 5px;
@@ -51,32 +55,45 @@ nav img {
 	margin-left: 110px; 
 }
 form{
+	font-family: 'Roboto', sans-serif;
 	padding-left: 30px;
 	padding-bottom: 30px;
 	padding-top: 20px;
-	background-repeat: no-repeat;
-	background-size: 100%; 
-	background-position-y: -60px;
 	border-bottom: 10px solid black;
 }
 .formBorder{
 	margin-left: 20px;
 }
 input[type=file] {
+	display: inline;
     border: 3px solid grey;
-    border-radius: 4px;
+	border-radius: 4px;
+
+	margin-right: 5px;
 }
 input[type=text] {
+	display: inline;
     border: 3px solid grey;
-    border-radius: 4px;
+	border-radius: 4px;
+
+	margin-right: 5px;
 }
 input[type=submit] {
+	display: inline;
     background-color:lightsalmon;
 	border-radius: 4px;
 	font-family: 'Roboto', sans-serif;
 	color: black;
+	margin-left: 5px;
+	margin-right: 5px;
 }
-
+.return {
+	background-color:lightsalmon;
+	border-radius: 4px;
+	font-family: 'Roboto', sans-serif;
+	color: black;
+	margin-left: 5px;
+}
 #map{
 	height: 100%;
 	margin-top: 0px;
@@ -100,7 +117,7 @@ footer{
 	background-color: white;
 	border: 5px solid black;
 	padding: 30px;
-	font-family:'Work Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	margin-left: 135px;
 	padding-top: 5px;
 }
@@ -108,9 +125,7 @@ footer{
 .aboutDescript{
 	font-size: 18px;
 }
-h4{
-	font-family:'Work Sans', sans-serif;
-}
+
 #footer{
 	margin-top: 10px;
 	padding-top: 10px;

@@ -15,7 +15,6 @@ class About extends Component
                             write a description, record the location, and enter it into our database.</p>
                   
                         <h1>Developers</h1>
-                    
                         <img src="../assets/img/artwork/baba.jpg" height="120" width="150"/><h4>Cory Miljour</h4>
                         <img src="../assets/img/artwork/Angelic.png" height="120" width="150"/><h4>Helen Smith</h4>
                         <img src="../assets/img/artwork/frida_deer.jpg" height="120" width="150"/><h4>Sara Heymann</h4>
