@@ -27,7 +27,7 @@ export default class NavHeader extends React.Component {
                       </Col>
                   
                       <Col xs={6} md={4} lg={3}>
-                        <h3>Sign In to Add Art Work</h3>
+                        <h5>To Add Art Work</h5>
                         <a href="/auth/google"><img src="./assets/img/2x/btn_google_signin_light_normal_web@2x.png" width="191px" height="46px"></img></a>
                       </Col>
                     </Row>
