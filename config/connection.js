@@ -2,14 +2,6 @@ var mysql = require('mysql');
 
 require('dotenv').config();
 
-// var pool  = mysql.createPool({
-//   connectionLimit : 10,
-//   host            : 'localhost',
-//   user            : 'root',
-//   password        : '',
-//   database        : 'chicago_public'
-// });
-
 var pool  = mysql.createPool({
   connectionLimit : 10,
   host            : process.env.DB_HOST,

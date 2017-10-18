@@ -26,23 +26,23 @@ var isAuthenticated = function (req, res, next) {
     res.send('Please login through google on the page before uploading');
 }
 
-// passport.serializeUser(function(user, done) {
-//     done(null, user);
-// });
+passport.serializeUser(function(user, done) {
+    done(null, user);
+});
   
-// passport.deserializeUser(function(user, done) {
-//     done(null, user);
-// });
+passport.deserializeUser(function(user, done) {
+    done(null, user);
+});
   
-// passport.use(new GoogleStrategy({
-//       clientID:     process.env.GOOGLECLIENTID,
-//       clientSecret: process.env.CLIENTSECRET,
-//       callbackURL: "http://www.solvebycode.com:5000/auth/google/callback",
-//     },
-//     function(accessToken, refreshToken, profile, cb) {
-//       cb(null,profile);
-//     }
-// ));
+passport.use(new GoogleStrategy({
+      clientID:     process.env.GOOGLECLIENTID,
+      clientSecret: process.env.CLIENTSECRET,
+      callbackURL: "http://www.solvebycode.com:5000/auth/google/callback",
+    },
+    function(accessToken, refreshToken, profile, cb) {
+      cb(null,profile);
+    }
+));
 
 // route retrieves art details from db
 router.get("/table", function(req,res){
