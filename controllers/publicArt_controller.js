@@ -37,7 +37,7 @@ passport.deserializeUser(function(user, done) {
 passport.use(new GoogleStrategy({
       clientID:     process.env.GOOGLECLIENTID,
       clientSecret: process.env.CLIENTSECRET,
-      callbackURL: "http://www.solvebycode.com:5000/auth/google/callback",
+      callbackURL: "http://chicagoart.solvebycode.com/auth/google/callback",
     },
     function(accessToken, refreshToken, profile, cb) {
       cb(null,profile);
