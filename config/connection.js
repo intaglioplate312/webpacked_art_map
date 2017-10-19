@@ -2,6 +2,9 @@ var mysql = require('mysql');
 
 require('dotenv').config();
 
+if(process.env.JAWSDB_URL) {
+  connection = mysql.createConnection(process.env.JAWSDB_URL);
+}else {
 var pool  = mysql.createPool({
   connectionLimit : 10,
   host            : process.env.DB_HOST,
@@ -9,6 +12,7 @@ var pool  = mysql.createPool({
   password        : process.env.DB_PASS,
   database        : process.env.DB_DB
  });
+};
 
 pool.getConnection(function(err, connection) {
   connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
