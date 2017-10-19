@@ -1,5 +1,6 @@
 import React from 'react';
-import {Grid, Row, Col, Clearfix, Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'react-bootstrap';
+import {Grid, Row, Col, Clearfix, Navbar, MenuItem, Nav, NavItem, NavDropdown} from 'reactstrap';
+
 
 
 export default class NavHeader extends React.Component {
