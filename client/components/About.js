@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Bootstrap from 'react-bootstrap';
+import Bootstrap from 'reactstrap';
 
 class About extends Component
 {
